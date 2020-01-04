@@ -1,0 +1,27 @@
+{
+  "name": "letstalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "neil dahiya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.2",
+    "express-sessions": "^1.0.6",
+    "mdbootstrap": "^4.11.0",
+    "mongoose": "^5.8.4",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
