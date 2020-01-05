@@ -1,3 +1,34 @@
 .section {
   min-height: 300px;
 }
+/* @brand-color: #b20000; */
+.view {
+  background: linear-gradient(-45deg, #ee7752, #4068bf, #2ed18d);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 15s ease infinite;
+  animation: gradientBG 15s ease infinite;
+}
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Login/Signup Modal */
