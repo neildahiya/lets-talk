@@ -27,6 +27,7 @@ body {
   width: 20%;
 }
 .box2 {
+  justify-content: center;
   width: 55%;
 }
 .box3 {
@@ -41,6 +42,14 @@ body {
 .mapSection {
   height: 30vh;
 }
+#nextmeet {
+  height: 20%;
+  background-color: #002168;
+  padding: 5px 10px;
+  margin: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
 
 /* Box2 */
 .feeling-box {
@@ -51,6 +60,15 @@ body {
 }
 .support-group {
   height: 40vh;
+}
+
+#howFeelText {
+  background-color: #002168;
+  /* padding: 10px 15px; */
+  margin: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  height: 40%;
 }
 
 /* Box3 */
