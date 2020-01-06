@@ -13,6 +13,10 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true }));
 // app.use(Layouts);
 
+app.get("/dashboard", (req, res) => {
+  res.render("dashboard");
+});
+
 app.get("/", (req, res) => {
   res.render("home");
 });

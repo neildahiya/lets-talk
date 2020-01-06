@@ -1,0 +1,85 @@
+body {
+  /* background-color: rgb(98, 148, 255); */
+  background: linear-gradient(-45deg, #ee7752, #4068bf, #2ed18d);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 15s ease infinite;
+  animation: gradientBG 15s ease infinite;
+}
+.inbox {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 2px;
+}
+.container-1 {
+  padding-top: 100px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container-1 > div {
+  padding: 10px;
+  border: 0px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.box1 {
+  width: 20%;
+}
+.box2 {
+  width: 55%;
+}
+.box3 {
+  width: 20%;
+}
+
+/* Box1 */
+
+.timeline {
+  height: 60vh;
+}
+.mapSection {
+  height: 30vh;
+}
+
+/* Box2 */
+.feeling-box {
+  height: 20vh;
+}
+.chat-therapy {
+  height: 30vh;
+}
+.support-group {
+  height: 40vh;
+}
+
+/* Box3 */
+.advert {
+  height: 60vh;
+}
+.similar {
+  height: 30vh;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
