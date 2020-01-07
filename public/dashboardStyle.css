@@ -6,21 +6,23 @@ body {
   animation: gradientBG 15s ease infinite;
 }
 .inbox {
-  border: 1px solid rgb(100, 100, 100);
+  border: 0px solid rgb(100, 100, 100);
   border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.81);
 }
 .container-1 {
   padding-top: 100px;
-  opacity: 0.7;
+
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
 .container-1 > div {
   padding: 10px;
+  /* opacity: 0.85; */
   border: 0px solid black;
   border-radius: 3px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .box1 {
@@ -39,11 +41,22 @@ body {
 .timeline {
   height: 60vh;
 }
-.mapSection {
-  height: 30vh;
-}
+/* .mapSection {
+  height: 40vh;
+} */
 #nextmeet {
-  height: 20%;
+  height: 40px;
+  background-color: #002168;
+  padding: 5px 10px;
+  margin: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+#timeline-heading,
+#chat-text,
+#support-heading,
+#similar-heading {
+  height: 40px;
   background-color: #002168;
   padding: 5px 10px;
   margin: auto;
@@ -53,22 +66,22 @@ body {
 
 /* Box2 */
 .feeling-box {
-  height: 20vh;
+  height: 15vh;
 }
-.chat-therapy {
+/* .chat-therapy {
   height: 30vh;
-}
-.support-group {
+} */
+/* .support-group {
   height: 40vh;
-}
+} */
 
 #howFeelText {
+  height: 40px;
   background-color: #002168;
-  /* padding: 10px 15px; */
+  padding: 5px 10px;
   margin: auto;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-  height: 40%;
 }
 
 /* Box3 */
@@ -100,4 +113,44 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Slider */
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000a5f;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+.emojiflex {
+  display: flex;
+}
+#c1,
+#c2,
+#c3,
+#c4 {
+  flex: 1;
 }

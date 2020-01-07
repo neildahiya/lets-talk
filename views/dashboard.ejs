@@ -132,41 +132,118 @@
       <div class="box1">
         <div class="timeline inbox mt-2">
           <div id="timeline-heading">
-            Timeline
+            <h4>Timeline</h4>
           </div>
           <div id="people-recent"></div>
         </div>
         <div class="mapSection inbox mt-2">
           <div id="nextmeet"><h4>Next Meeting</h4></div>
           <div id="address-box">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-            officia!
+            Address goes here
           </div>
-          <div id="mapb">Map here</div>
+          <div id="map" style="width:100%;height: 300px;">Hello</div>
         </div>
       </div>
       <div class="box2">
-        <div class="feeling-box inbox mt-2">
-          <div id="howFeelText" class="py-2">
-            <h3>How are you feeling today?</h3>
+        <div class="feeling-box inbox my-2">
+          <div id="howFeelText" class="">
+            <h4>How are you feeling today?</h4>
           </div>
-          <div class="emojiArea">
-            <span>Happy</span>
-            <span>Fine</span>
-            <span>Sad</span>
-            <span>Suicidal</span>
+          <div class="emojiArea px-5 pt-2 emojiflex">
+            <span id="c1" style="font-size:20px;"> &#128545;</span>
+            <span id="c2" style="font-size:20px;"> &#128532;</span>
+            <span id="c3" style="font-size:20px;"> &#128528;</span>
+            <span id="c4" style="font-size:20px;"> &#128512;</span>
+            <span id="c5" style="font-size:20px;"> &#128513;</span>
+          </div>
+          <div class="slidecontainer d-flex justify-content-center pt-2">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
           </div>
         </div>
-        <div class="chat-therapy inbox mt-2">Therapy/ Chat</div>
-        <div class="support-group inbox mt-2">Support Groups</div>
+        <div class="chat-therapy inbox mt-2">
+          <div id="chat-text" class="">
+            <h4>Chat/Therapy</h4>
+          </div>
+          <div id="chat-info" class="px-3 py-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            aliquid ipsam deserunt perspiciatis numquam provident veritatis
+            fuga, eligendi excepturi tempora at odit totam laborum tempore quam
+            est? Accusantium minus nihil impedit natus molestias vel omnis vero
+            ad soluta quae ea, tenetur fugiat obcaecati, tempora voluptatem
+            velit quaerat unde pariatur qui incidunt quasi. Sequi accusamus
+            vitae quod, quasi odit dignissimos. Quidem.
+          </div>
+          <div class="chat-buttons px-3 d-flex py-2 justify-content-center">
+            <div class="join-chat btn btn-primary">Chat Now!</div>
+            <div class="set-appointment btn btn-cyan">
+              Book an appointment
+            </div>
+          </div>
+        </div>
+        <div class="support-group inbox mt-2">
+          <div><h4 id="support-heading">Support Groups</h4></div>
+          <div id="support-info" class="px-3 py-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            aliquid ipsam deserunt perspiciatis numquam provident veritatis
+            fuga, eligendi excepturi tempora at odit totam laborum tempore quam
+            est? Accusantium minus nihil impedit natus molestias vel omnis vero
+            ad soluta quae ea, tenetur fugiat obcaecati, tempora voluptatem
+            velit quaerat unde pariatur qui incidunt quasi. Sequi accusamus
+            vitae quod, quasi odit dignissimos. Quidem.
+          </div>
+          <div class="support-buttons px-3 d-flex py-2 justify-content-center">
+            <div class="join-support btn btn-primary">Join a group</div>
+            <div class="organize-support btn btn-orange darken-3">
+              Organize your own group
+            </div>
+          </div>
+        </div>
       </div>
       <div class="box3">
         <div class="advert inbox mt-2">Ad</div>
-        <div class="similar inbox mt-2">Similar</div>
+        <div class="similar inbox mt-2">
+          <h4 id="similar-heading">Similar</h4>
+        </div>
       </div>
     </div>
 
     <!-- SCRIPTS -->
+
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value; // Display the default slider value
+
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      };
+
+      // Google API
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=[API Key]&callback=initMap"
+    ></script>
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
