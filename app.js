@@ -21,6 +21,9 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/chat", (req, res) => {
+  res.render("chatpage");
+});
 app.listen(PORT, function() {
   console.log(`listening to port:${PORT}`);
 });
