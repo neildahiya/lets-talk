@@ -1,8 +1,9 @@
 var mongoose = require("mongoose");
-//schema setup
-var userSchema = new mongoose.Schema({
+var passportLocalMongoose = require("passport-local-mongoose");
+var UserSchema = new mongoose.Schema({
   name: String,
   image: String,
+  password: String,
   ethnicity: String,
   age: Number,
   phone: Number,
@@ -11,4 +12,5 @@ var userSchema = new mongoose.Schema({
   trainee: Boolean,
   feeling: String
 });
-module.exports = mongoose.model("User", userSchema);
+UserSchema.plugin(passportLocalMongoose);
+module.exports = mongoose.model("User", UserSchema);
