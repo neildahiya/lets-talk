@@ -191,8 +191,8 @@
             </div>
             
             <div class="modal-body">
-                <button class="btn btn-red" style="width: 95%"> <i class="fab fa-google"></i> Login using Google</button>
-                <button class="btn btn-blue" style="width: 95%"> <i class="fab fa-facebook-f"></i> Login using Facebook</button>
+                <button class="btn btn-red" style="width: 97%"> <i class="fab fa-google"></i> Login using Google</button>
+                <button class="btn btn-blue" style="width: 97%"> <i class="fab fa-facebook-f"></i> Login using Facebook</button>
             </div>
             <form action="/register" method="POST" class="text-center border border-light p-5">
                     <div class="form-row mb-4">
@@ -207,7 +207,7 @@
                         </div>
                     
                         <!-- E-mail -->
-                        <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <input type="email" name="username" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
                     
                         <!-- Password -->
                         <input type="password" id="defaultRegisterFormPassword" name="password" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
@@ -245,15 +245,15 @@
                     <button class="btn btn-red" style="width: 95%"> <i class="fab fa-google"></i> Login using Google</button>
                     <button class="btn btn-blue" style="width: 95%"> <i class="fab fa-facebook-f"></i> Login using Facebook</button>
                 </div>
-                <form action="#!" class="text-center border border-light p-5">
+                <form action="/login" method="POST" class="text-center border border-light p-5">
                         <div class="form-row mb-4">
                                 
                             
                             <!-- E-mail -->
-                            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                            <input type="email" name="username" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
                         
                             <!-- Password -->
-                            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">    
+                            <input type="password" name="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">    
                             <!-- Sign up button -->
                             <button class="btn btn-info my-4 btn-block" type="submit">Login</button>
                 </form>

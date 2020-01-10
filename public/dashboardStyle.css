@@ -5,6 +5,19 @@ body {
   -webkit-animation: gradientBG 15s ease infinite;
   animation: gradientBG 15s ease infinite;
 }
+a.nostyle:link {
+  text-decoration: inherit;
+  height: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+
+  color: inherit;
+  cursor: auto;
+}
 .inbox {
   border: 0px solid rgb(100, 100, 100);
   border-radius: 2px;
