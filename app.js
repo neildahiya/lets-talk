@@ -79,6 +79,6 @@ app.get("/chat", (req, res) => {
 app.get("/", (req, res) => {
   res.render("home");
 });
-app.listen(PORT, function() {
+app.listen(process.env.Port || PORT, function() {
   console.log(`listening to port:${PORT}`);
 });
